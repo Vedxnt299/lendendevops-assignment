@@ -9,6 +9,14 @@ pipeline {
             }
         }
 
+        stage('Terraform Validate') {
+            steps {
+                dir('terraform') {
+                    sh 'terraform validate'
+                }
+            }
+        }
+
         stage('Security Scan') {
             steps {
                 sh 'trivy config --severity CRITICAL --exit-code 1 terraform/'
