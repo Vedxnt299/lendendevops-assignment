@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req,res)=>{
-res.send(`
+  res.send(`
       <h1>LenDenClub DevOps Assignment</h1>
       <p>Application deployed using:</p>
       <ul>
@@ -13,6 +13,6 @@ res.send(`
     `)
 })
 
-app.listen(3000, ()=>{
-console.log("Server running on port 3000")
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Server running on port 3000")
 })
