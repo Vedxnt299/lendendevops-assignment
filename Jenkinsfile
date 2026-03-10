@@ -11,7 +11,7 @@ pipeline {
 
         stage('Security Scan') {
             steps {
-                sh 'trivy config terraform/'
+                sh 'trivy config --severity HIGH,CRITICAL --exit-code 1 terraform/'
             }
         }
 
