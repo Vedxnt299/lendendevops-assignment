@@ -14,10 +14,10 @@ resource "aws_instance" "web" {
               cd /home/ubuntu
               git clone https://github.com/Vedxnt299/lendendevops-assignment.git
 
-              cd lendendevops-assignment
+              cd lendendevops-assignment/app
               npm install
 
-              node index.js &
+              node index.js > output.log 2>&1 &
               EOF
 
   tags = {
