@@ -9,6 +9,12 @@ pipeline {
             }
         }
 
+        stage('Security Scan') {
+            steps {
+                sh 'trivy config terraform/'
+            }
+        }
+
         stage('Terraform Init') {
             steps {
                 dir('terraform') {
