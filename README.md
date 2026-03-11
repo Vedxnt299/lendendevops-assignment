@@ -118,3 +118,36 @@ After applying the AI recommendation:
 - Only the required application port (3000) remained publicly accessible
 
 The Jenkins pipeline was re-run and the Trivy scan successfully passed with **no critical security issues**.
+
+## Video Explanation
+
+A complete walkthrough of the project, infrastructure setup, CI/CD pipeline, and deployment process can be found in the video below:
+
+https://drive.google.com/drive/folders/1zr6Jb4KroLLTRyKFgTMwbliFdJqfTuOl
+
+
+---
+
+## How to Run the Application Locally
+
+Clone the repository:
+
+```
+git clone https://github.com/Vedxnt299/lendendevops-assignment.git
+```
+Navigate to the project directory:
+```
+cd lendendevops-assignment
+```
+Build the Docker image:
+```
+docker build -t node-app .
+```
+Run the Docker container:
+```
+docker run -p 3000:3000 node-app
+```
+Once the container starts, open the application in your browser:
+```
+http://localhost:3000
+```
