@@ -82,6 +82,12 @@ Terraform successfully provisioned the AWS EC2 instance.
 
 The Node.js application was successfully deployed and is accessible via the EC2 public IP.
 
+The application is deployed on an AWS EC2 instance using Terraform and Docker.
+
+Access the application using the EC2 public IP:
+
+http://<EC2-PUBLIC-IP>:3000
+
 ![Node App Running](screenshots/node_app_running_on_ec2.png)
 
 ## AI Usage Log (Security Analysis & Remediation)
